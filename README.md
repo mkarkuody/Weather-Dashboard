@@ -2,7 +2,7 @@
 
 Repository ; https://github.com/mkarkuody/Weather-Dashboard
 Deployed file; https://mkarkuody.github.io/Weather-Dashboard/
-
+functional video; https://drive.google.com/file/d/1opnBZVG3HZeI_5nSSuayqtc3VAfvYhEV/view
 Started with One HTML file Named it index, one css file, Named it style and one js file, Named it script.
 in HTML file made a header and a search search area used bootstrap in html, added background gif of sky in css file, made a file name script.js and Made some Variables, such as;
 var apiKey= "7c36e96a7ada1b2bc2e4e413e55c3965"
