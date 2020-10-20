@@ -1,27 +1,42 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href=".style.css">
     <title>Weather Dashboard</title>
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-dark">
-    <span class="navbar-brand mb-1 h1" id="navbar">Weather Dashboard</span>
-    </nav>
-    <aside>
-    <h3>Search for a city</h3>
-    <form class="example" action="/action_page.php" style="max-width:300px">
-        <input type="text" placeholder="Search.." name="search2">
-        <button type="submit"><i class="fa fa-search"></i></button>
-      </form>
-    </aside>
+    <header class = "bg-dark text-white text-center p-2">
+        <h1>Weather Dashboard</h1>
+    </header>
+    <main class="container-fluid">
+        <div class = "row">
+            <div class="col-12 col-md-3 p-2 seek">
+                <form class = "border p-2" id = "city-name">
+                    <h4>Search for a City</h2>
+                    <input id="input" type = "text" autofocus = "true" class = "form-input"/>
+                    <button class = "btn btn-primary" type = "submit">Search</button>
+                </form>
+                <div class = "past-search border" id = "previous"></div>
+            </div>
+            <div class="col-12 col-md-9">
+                <div class = "row border selected-city" id = "current-forecast">
+                    <div class = "col-12">
+                        <h2 id="find"></h2>
+                        <div id = "temp" class = "list-group"></div>
+                    </div>  
+                </div>
+                <div class = "row border" id = "five-day-forecast">
+                        <h2 class= "col-12" id = "wheather"></h2>
+                        <div class = "d-flex" id = "weak"></div>
+                </div>  
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
     
+    <script src="./script.js"></script>
 </body>
-
 </html>
